@@ -63,10 +63,10 @@ def monitor_memory_usage():
         current_memory_usage_int = int(current_memory_usage) # Convert to an integer for display
         
         if current_time < spike_message_displayed_until:
-            threading.Thread(target=play_alert_sound, daemon=True).start()
             clear_console()
             print(f"Current Memory Usage: {current_memory_usage_int} Mo")
             print("/!\ Mad Warrior Detected /!\\")
+            threading.Thread(target=play_alert_sound, daemon=True).start()
             time.sleep(5)
         elif current_memory_usage != prev_memory_usage:
             clear_console()
