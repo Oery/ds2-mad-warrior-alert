@@ -37,7 +37,12 @@ To start monitoring Dark Souls II for the Mad Warrior spawn, follow these steps:
 
 -   Launch Dark Souls II and enter the game world.
 
-2. **Run the Script**
+2. **Add Sound / Change Settings**
+
+-   Put your mp3 file next to the script
+-   You can either rename it "mad_warrior_alert.mp3" or change the path used in the script
+
+3. **Run the Script**
 
 -   Open a terminal or command prompt window.
 -   Navigate to the directory where the script is located.
@@ -47,7 +52,7 @@ To start monitoring Dark Souls II for the Mad Warrior spawn, follow these steps:
 python mad_warrior_alert.py
 ```
 
-3. **Monitor for Detection**
+4. **Monitor for Detection**
 
 -   Keep resting and quitting the bonfire until an alert pops up
 -   Note that with the default settings, teleporting using the feather will cause a false alert
